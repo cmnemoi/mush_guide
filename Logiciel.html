@@ -1,0 +1,904 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="fr" style="" class=" tid_js tid_no-touch tid_draganddrop tid_websockets" data-lt-installed="true"><head>
+		<script src="Logiciel_files/hive_keychain.js"></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" xml:lang="fr" lang="fr">
+		<title>Mush - 
+			Guide du Jeu
+		</title>
+		<meta name="description" content="Jouez dans la peau d'un des derniers espoirs de l'Humanité.  À vos côtés, 15 autres membres d'équipage, et un parasite, le Mush ! Trahisons, exploits et explorations ! ">
+		<meta name="keywords" content="scifi,mush, sci-fi, science-fiction, space, trailer, fiction, official, teaser, traitre, jeux, survie">
+		<link rel="stylesheet" type="text/css" href="Logiciel_files/style.css">
+		
+		
+		<script type="text/javascript" src="Logiciel_files/std.js"></script>
+		
+		<script type="text/javascript" src="Logiciel_files/app.js"></script>
+	<!--	Titre de post partagé dans FB -->
+		<meta property="og:title" content="Mush - Jeu multijoueur de coopération : trahisons, explorations et fuite dans l'espace !">
+		<meta property="og:type" content="game">
+		<meta property="og:image" content="http:////data.mush.vg/img/social/mush-screen.png">
+		<meta property="og:image" content="http:////data.mush.vg/img/social/facebook-post.png">
+		<meta property="og:image" content="http:////data.mush.vg/img/social/mush-box.png">
+		
+		<meta property="og:url" content="http://mush.vg/">
+		<meta property="fb:admins" content="1320032621">
+		<meta property="og:description" content="Jouez dans la peau d'un des derniers espoirs de l'Humanité.  À vos côtés, 15 autres membres d'équipage, et un parasite, le Mush ! Trahisons, exploits et explorations ! ">
+		
+		<meta name="msh" content="MUSH">
+		
+		<link rel="stylesheet" href="Logiciel_files/jquery-ui.css">
+		<script src="Logiciel_files/jquery-ui-1.9.1.custom.min.js"></script>
+		<script src="Logiciel_files/jquery.masonry.min.js"></script>
+		
+		<!-- meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /-->
+		
+	<link type="text/css" rel="stylesheet" href="Logiciel_files/bar.css"></head>
+
+	<body class="mush_body tid_ff tid_v109 tid_lang_fr" cz-shortcut-listen="true"><div id="tid_baseNotice" style="display:none"> <div class="tid_black"></div> <div class="tid_wrapper"><div class="tid_box"> <div class="tid_close"></div> <div class="tid_content"></div> </div></div></div><div id="tid_noticeList" style="display:none"><div class="tid_wrapper"></div></div><div id="tid_bar" class="tid_barWrapper" style="height: 32px; background-color: rgb(38, 42, 53); overflow: visible;">
+<div id="tid_cssCheck"></div>
+<div class="tid_shadow"></div>
+
+
+
+<div class="tid_topBar" style="background-color: black; color:white; height:53px">
+
+	<!-- BAR : LEFT PART -->
+	<span class="tid_left">
+		<a id="tid_openLeft" class="tid_block tid_logo" href="http://twinoid.com/" onclick="_tid.showSidePanel('twinoid'); return false;" title="Twinoid">
+			
+
+			
+				
+				<span class="tid_newsNotif" id="tid_newsNotif" style="display:none">
+					<span class="tid_blink" id="tid_newsBlink"></span>
+					<span class="tid_counter" id="tid_newsCount">0</span>
+					<span class="tid_text">  actualité </span>
+				</span>
+			
+		</a>
+
+		<span class="tid_block tid_separator"></span>
+
+		<span class="tid_block tid_shortcuts">
+			<div class="tid_wrapper">
+				
+					
+						<a href="http://www.hordes.fr/" class="tid_barTip" target="_top"><span class="tid_barTipBox" style="display:none"> Hordes.fr </span>
+							
+							<img src="Logiciel_files/favicon.ico" alt="?" title="">
+						</a>
+					
+				
+					
+						<a href="http://mush.vg/" class="tid_barTip" target="_top"><span class="tid_barTipBox" style="display:none"> Mush </span>
+							
+							<img src="Logiciel_files/favicon_004.ico" alt="?" title="">
+						</a>
+					
+				
+					
+						<a href="http://www.naturalchimie.com/" class="tid_barTip" target="_top"><span class="tid_barTipBox" style="display:none"> Naturalchimie 2 </span>
+							
+							<img src="Logiciel_files/favicon_003.ico" alt="?" title="">
+						</a>
+					
+				
+					
+						<span class="tid_sseparator"></span>
+					
+				
+					
+						<a href="http://twin.tithom.fr/mush/" class="tid_barTip" target="_top"><span class="tid_barTipBox" style="display:none"> Twinpedia (Mush) </span>
+							
+							<img src="Logiciel_files/favicon.bmp" alt="?" title="">
+						</a>
+					
+				
+					
+						<span class="tid_sseparator"></span>
+					
+				
+					
+						<a href="http://mush.twinoid.com/" class="tid_barTip" target="_top"><span class="tid_barTipBox" style="display:none"> Mush EN </span>
+							
+							<img src="Logiciel_files/14935.png" alt="?" title="">
+						</a>
+					
+				
+					
+						<span class="tid_sseparator"></span>
+					
+				
+					
+						<a href="https://docs.google.com/spreadsheets/d/10A5TCcZibtJL6J8UmD9FpqCYLME4HnVwSesZ_Vw06DM/edit#gid=56" class="tid_barTip" target="_top"><span class="tid_barTipBox" style="display:none"> Logs Mush actuels </span>
+							
+							<img src="Logiciel_files/drive_2020q4_32dp.png" alt="?" title="">
+						</a>
+					
+				
+					
+						<span class="tid_sseparator"></span>
+					
+				
+					
+						<span class="tid_sseparator"></span>
+					
+				
+					
+						<a href="http://host.tale-of-defense.fr/index.php" class="tid_barTip" target="_top"><span class="tid_barTipBox" style="display:none"> Host Tale of Defense </span>
+							
+							<img src="Logiciel_files/favicon.png" alt="?" title="">
+						</a>
+					
+				
+					
+						<a href="http://odyssey.muxxu.com/" class="tid_barTip" target="_top"><span class="tid_barTipBox" style="display:none"> Odyssey </span>
+							
+							<img src="Logiciel_files/favicon_005.ico" alt="?" title="">
+						</a>
+					
+				
+					
+						<a href="#" class="tid_barTip" onclick="_tid.askNotes(); return false"><span class="tid_barTipBox" style="display:none">Bloc-notes</span>
+							<img src="Logiciel_files/notes.png" alt="?" title="">
+						</a>
+					
+				
+					
+						<a href="http://kingdom.muxxu.com/" class="tid_barTip" target="_top"><span class="tid_barTipBox" style="display:none"> Kingdom </span>
+							
+							<img src="Logiciel_files/favicon_002.ico" alt="?" title="">
+						</a>
+					
+				
+			</div>
+		</span>
+
+		
+	</span>
+	
+	<!-- BAR : RIGHT PART -->
+	<span class="tid_right">
+		
+			<span class="tid_block tid_search">
+				<form action="//twinoid.com/user/goto?host=mush.vg" method="POST">
+					<input type="hidden" name="customUrl" value="">
+					
+					<div class="tid_userSearchContainer" style="width: 150px; height: 18px; float: none;"><img class="tid_loadingSearch" src="Logiciel_files/loading.gif"><div class="tid_search_popup" style="display:none"></div><input type="text" name="tidSearch_name" tid_icon="0" tid_friends="0" class="tid_userSearch tid_parsed tid_defParsed tid_default" tid_default="Chercher un joueur..." style="width: 150px; height: 18px; float: none; position: absolute; z-index: 1; padding-left: 0px;" autocomplete="off" value="Chercher un joueur..."><input type="hidden" name="tidSearch" id="undefined"></div>
+				</form>
+			</span>
+
+
+			<span class="tid_block tid_separator"></span>
+
+
+			<a id="tid_openRight" class="tid_block tid_name" href="http://twinoid.com/user/9557290" onclick="_tid.showSidePanel('user'); return false;">
+				
+				<span class="tid_userNotif" id="tid_userNotif" style="display:none">
+					<span class="tid_blink" id="tid_notifBlink"></span>
+					<span class="tid_counter" id="tid_userNotifCount">0</span>
+					<span class="tid_text">  notification </span>
+					<img class="tid_mail" src="Logiciel_files/miniMail.png" alt="Mail" title="" style="display:none">
+				</span>
+				<span class="tid_name">Evian</span>
+				<div class="tid_twinoidAvatar" style="width:20px; max-height:20px"><table><tbody><tr><td style="width:20px; height:10px;"><img class="tid_avatarImg" src="Logiciel_files/7fa45446_9557290_100x100.png" alt="Evian" title="" style="max-width:20px; max-height:20px"></td></tr></tbody></table></div>
+			</a>
+		
+	</span>
+
+	
+
+</div>
+
+
+<!-- EXTENSIONS -->
+<div id="tid_underBar">
+	<!-- Barre Muxxu -->
+	<div class="tid_extension tid_muxxu" id="tid_bar_custom" style="display:none"></div>
+
+	<!-- Language selection -->
+	
+	
+
+	<!-- Quick account creation -->
+	
+
+	<!-- Beta access -->
+	
+
+	<!-- Failsafe-->
+	
+
+	<!-- Mail bounce-->
+	
+
+	<!-- Account deletion -->
+	
+
+</div>
+
+
+
+
+<!-- LEFT SIDEPANEL -->
+<div class="tid_sidePanel" id="tid_sidePanel_twinoid" style="visibility:hidden">
+	<div class="tid_sideHeader">
+		<a class="tid_close" href="#" onclick="_tid.closeLeftPanel(event); return false;"></a>
+		<a class="tid_twinoid" href="http://twinoid.com/" onclick="return _tid.checkCornerClick('twinoid', event);"></a>
+		Twinoid
+	</div>
+
+	<div class="tid_sidePanelContent">...</div>
+</div>
+
+
+<!-- RIGHT SIDEPANEL -->
+<div class="tid_sidePanel" id="tid_sidePanel_user" style="visibility:hidden">
+	<div class="tid_sideHeader">
+		<a class="tid_close" href="#" onclick="_tid.closeRightPanel(event); return false;"></a>
+		<span>Evian</span>
+	</div>
+	
+	<div class="tid_darkSection">
+		<div class="tid_actions">
+			<a href="http://twinoid.com/user/9557290">
+				<div class="tid_twinoidAvatar" style="width:32px; max-height:32px"><table><tbody><tr><td style="width:32px; height:16px;"><img class="tid_avatarImg" src="Logiciel_files/7fa45446_9557290_100x100.png" alt="Evian" title="" style="max-width:32px; max-height:32px"></td></tr></tbody></table></div>
+				<span>Evian</span>
+			</a>
+
+			<a href="http://twinoid.com/tid/nexus" class="tid_nexus">
+				<span class="tid_icon"></span>
+				<span>Nexus</span>
+			</a>
+
+			<a href="http://twinoid.com/user/account" class="tid_optional tid_account">
+				<span class="tid_icon"></span>
+				<span>Réglages</span>
+			</a>
+
+			<a href="#" onclick="_tid.disconnect(); return false" class="tid_optional tid_logout">
+				<span class="tid_icon"></span>
+				<span>Déconnexion</span>
+			</a>
+
+			
+			<a href="http://twinoid.com/discuss" target="_blank" onclick="if( event.which == 2 ) return true; _tid.askDiscuss(); return false" class="tid_mail">
+				<span class="tid_icon"></span>
+				<span>Messages</span>
+			</a>
+			
+
+			<a href="#" target="_blank" onclick="_tid.askContact(); return false" class="tid_optional tid_contacts">
+				<span class="tid_icon"></span>
+				<span>Contacts</span>
+			</a>
+
+			
+
+			<a href="http://twinoid.com/group" class="tid_optional tid_groups">
+				<span class="tid_icon"></span>
+				<span>Groupes</span>
+			</a>
+
+			<a href="http://twinoid.com/user/customizeBar" class="tid_optional tid_shortcuts">
+				<span class="tid_icon"></span>
+				<span>Raccourcis</span>
+			</a>
+
+			<a href="#" onclick="_tid.disconnect(); return false" class="tid_smallViewPort tid_logout">
+				<span class="tid_icon"></span>
+				<span>Déconnexion</span>
+			</a>
+		</div>
+
+		
+		
+
+		<div class="tid_smallActions">
+			<a href="http://twinoid.com/user" onclick="if( event.which == 2 ) return true; _tid.askTitleEdit(); return false">Titre communautaire</a> |
+			<a href="http://twinoid.com/user" onclick="if( event.which == 2 ) return true; _tid.askStatusEdit(); return false">Statut</a>
+
+			
+			
+			
+
+		</div>
+	</div>
+
+
+	<div class="tid_sectionTitle">
+		Notifications
+		<a href="#" onclick="_tid.markEventsRead(); return false;" class="tid_mini">Tout lu</a>
+		<a href="http://twinoid.com/user/events" class="tid_mini">Histo.</a>
+	</div>
+	<div class="tid_sidePanelContent tid_sidePanelScrollable">...</div>
+
+</div>
+
+
+</div>
+		
+		
+		
+		<div id="content">
+			
+		
+		
+		
+		<div class="mxhead">
+			<a href="http://mush.vg/" class="logo keychainify-checked"><img src="Logiciel_files/pixel.gif" alt=""></a>
+			
+			<div class="mainmenu">
+				<!--
+Cache facultatif
+<div class="cache">
+	<img src="::data_url::/img/myimage_over.png" />
+</div>-->
+
+
+
+
+
+<ul id="menuBar">
+	<li class="daed"><a href="http://mush.vg/chooseHero" class="keychainify-checked">Daedalus</a></li>
+	
+	
+	<li><a href="http://mush.vg/me" class="keychainify-checked">Mon Compte</a></li>
+	<li><a href="http://mush.vg/group/list" class="keychainify-checked">Castings</a></li>
+	
+	<li><a href="http://mush.vg/ranking" class="keychainify-checked">Classement</a></li>
+	<li><a href="http://mush.vg/tid/forum" class="keychainify-checked">Forum</a></li>
+</ul>
+
+
+
+
+			</div>
+		</div>
+	
+		
+		<div id="maincontainer">
+			<div id="container_topright">
+				<div id="container_bottomleft">
+					<div id="container_bottomright">
+						<div id="container_bgleft">
+							<div id="container_bg">
+								<div id="container_inside">
+									<div id="cdUiHook" class="cdUiHook">
+										
+										<!-- static dialogs-->
+										<div class="cdDialogs" style="display:none">
+												<div style="display:none" id="cdTexts">
+	<div id="discreteLog" data-title="Discret">
+		Ce message est <strong>discret</strong>. Les autres joueurs ne peuvent le voir que si ils fouinent dans le réseau de caméra de cette pièce.
+	</div>
+
+	<div id="privateLog" data-title="Privé">
+		Ce message est <strong>privé</strong>. Vous seul pouvez le voir.
+	</div>
+	
+	<div id="txt_new_cycle">
+		<div class="but but_on">
+			<div class="butright">
+				<div class="butbg">
+					<a href="http://mush.vg/" class="keychainify-checked">Nouveau Cycle</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="txt_new_step">
+		<div class="but but_on">
+			<div class="butright">
+				<div class="butbg">
+					<a href="http://mush.vg/" class="keychainify-checked">Nouvelle Etape</a>
+					</div>
+				</div>
+		</div>
+	</div>
+	
+	
+	<div id="txt_ok">OK</div>
+	<div id="txt_cancel">Annuler</div>
+	<div id="txt_confirm">Confirmation</div>
+	
+	<div id="txt_tip_new_cycle" data-title="Nouveau Cycle">
+		Valider le changement de cycle pour obtenir vos Points d'Action 
+		<img class="paslot" src="Logiciel_files/pa_slot1.png" alt="pa">
+	 et / ou de Mouvement 
+		<img class="paslot" src="Logiciel_files/pa_slot2.png" alt="pm">
+	.
+	</div>
+	
+	<div id="txt_death_registered" data-title="Valider vos derniers mots">
+		<p>Êtes-vous sur de vouloir laisser «<em><span class="cdHook"></span></em>» comme trace dans votre aventure ? </p>
+		<p>Une fois cette <strong>partie finie</strong>, une notification vous donnera l'accès à <strong>votre position finale et au résumé des événements</strong> qui ont eu lieu à bord.</p>
+	</div>
+	
+	<div id="txt_mode_signal">
+		ATTENTION !
+		Vous avez des outils pour gérer les personnes à problèmes. Les 
+signalements ne doivent être utilisé que pour les cas GRAVES (insultes, 
+pourrissages ). Pour signaler correctement, rassembler des preuves et 
+des faits.
+		Etes-vous sur de vouloir signaler ce fil à la modération ? Un abus 
+entrainerait des sanctions.
+	</div>
+	
+	<div id="txt_slot_gold_once">
+		<p>Pour profiter de cet emplacement, <strong>montez de niveau</strong> et passez en <strong class="stronggold">	Mode Or</strong> <strong>au moins une fois</strong> !</p>
+	</div>
+	
+	<div id="txt_slot_gold_level"> <!-- si pas gold, et en plus il n'a pas le niveau (to do) -->
+		<p>Pour profiter de cet emplacement, <strong>montez de niveau</strong> et passez en <strong class="stronggold"> Mode Or</strong>.</p><p>Cliquez ici pour trouver toutes les infos !</p>
+	</div>
+	
+	<div id="txt_slot_gold">
+		<p>Pour profiter de cet emplacement, passez en <strong class="stronggold"> Mode Or</strong>.</p><p>Cliquez ici pour trouver toutes les infos !</p>
+	</div>
+	
+	<div id="txt_slot_level">
+		<p>Pour profiter de cet emplacement, <strong>montez de niveau</strong> !</p>
+	</div>
+	
+	<div id="txt_slot_ok">
+		<p>Cet emplacement est débloqué parce que le <strong class="stronggold">Mode Or</strong> a été acquis au moins une fois.</p>
+		<p>Il sera disponible si vous montez de niveau.</p>
+	</div>
+	
+	<div id="txt_slot_ok_b">
+		<p>Cet emplacement est disponible. Vous pouvez en profiter en jeu. </p>
+	</div>
+	
+	<div id="txt_slot_not_ok_gold">
+		<p>Pour profiter de cet emplacement, passez en <strong class="stronggold">Mode Or</strong>.</p>
+	</div>
+	
+	<div id="txt_tit_slot_locked_gold">
+		Bloqué (Mode Or désactivé)
+	</div>
+	
+	<div id="txt_tit_slot_locked_level">
+		Niveau insuffisant
+	</div>
+	
+	<div id="txt_tit_slot_locked">
+		Bloqué (Mode Or désactivé)
+	</div>
+	
+	<div id="txt_tit_slot_unlocked_one">
+		Débloqué (Mode Or activé une fois)
+	</div>
+	
+	<div id="txt_tit_slot_unlocked">
+		Débloqué (Mode Or activé)
+	</div>
+	
+	<div id="txt_request_complete">
+		Votre demande a bien été prise en compte.
+	</div>
+	
+	<div id="txt_grp_create">
+		<p>La création d'un <em>casting</em> représente un effort important. Pour qu'il soit opérationnel, il vous faudra rassembler au moins <em>32</em> joueurs.</p>
+		<p>Nous vous conseillons de préparer sa création via le forum.</p>
+	</div>
+	<div id="txt_daily">
+		Cette option ne peut être changée que toutes les 24 heures. Continuer ?
+	</div>
+	
+	<div id="txt_edit_me">Mon message ici !</div>
+</div>
+
+											
+<!--confirm_mask-->
+<div class="ui_overlay confirm cdTpl">
+	<div id="dialog" class="poptop" style="display:none;">
+		<div class="popbottom">
+			<div class="popbg">
+				<h4 id="dialog_title">
+					<!-- content here -->
+				</h4>
+				
+				<div id="dialog_body">
+					<!-- content here -->
+				</div>
+				<div class="but">
+					<div class="butright">
+						<a href="#" id="dialog_ok" class="butbg cdDialOk keychainify-checked">
+							D'accord
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="mask"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--confirm_tip-->
+<div class="ui_overlay tip cdTpl">
+	<div class="tuto_hinter" id="dialog" style="display:none;">
+		<img src="Logiciel_files/pixel.gif" class="tutoarrow">
+		<div id="dialog_body">
+			<!-- content here -->
+		</div>
+		<div class="but" id="cdDialConfirmOk">
+			<div class="butright">
+				<a href="#" id="dialog_ok" class="butbg cdDialOk keychainify-checked">
+					Suivant
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="mask"></div>
+</div>
+
+<!--confirm_choice -->
+<div class="ui_overlay choice cdTpl">
+	<div id="dialog" class="poptop" style="display:none;">
+		<div id="dialogbottom" class="popbottom">
+			<div id="dialogbg" class="popbg">
+				<h4 id="dialog_title">
+					<!-- content here -->
+				</h4>
+				<div id="dialog_body">
+					<!-- content here -->
+				</div>
+				<div class="but">
+					<div class="butright">
+						<a href="#" id="dialog_ok" class="butbg cdDialOk keychainify-checked">
+						OK
+						</a>
+					</div>
+				</div>
+				
+				<div class="but">
+					<div class="butright">
+						<a href="#" id="dialog_cancel" class="butbg keychainify-checked">
+						Annuler
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="mask"></div>
+</div>
+
+<div class="cdHeroSheet">
+	<div class="cdFace face ">
+	</div>
+	<div class="status">
+		<div class="cdCharName charname"></div>
+		<ul class="cdStatusList">
+			
+		</ul>
+	</div>
+	<div class="presentation"></div>
+	<ul class="cdSkills skills">
+		
+	</ul>
+</div>
+
+<div class="cdSkillBox cdTpl pickskill">
+	<div class="pickskill2">
+		<a href="#" class="close keychainify-checked"> <img src="Logiciel_files/close.png" onclick="$('.cdSkillBox').not('.cdTpl').remove(); Main.choosingSkills=false; return false;"></a>
+		<h3><img src="Logiciel_files/mustknow_left.png"><span>Choix de Compétences</span><img src="Logiciel_files/mustknow_right.png"></h3>
+		<p>Choisissez <strong>une compétence</strong> à acquérir :</p>
+		<ul class="cdSkillRep">
+			
+		</ul>
+		
+		
+		<div class="cdLearn" style="display:none;">
+			
+		<div class="but">
+			<div class="butright">
+				<div class="butbg">
+					
+						<a href="#" onclick=" Main.choosingSkills=false;Main.ajax('/exitLearn') ;return false;" class="keychainify-checked"> Quitter </a>
+					
+				</div>
+			</div>
+		</div>
+	
+		</div>
+	</div>
+</div>
+
+<div class="cdPickHero cdTpl pickup">
+	<div class="pickup2">
+		<a href="#" class="close keychainify-checked"> <img src="Logiciel_files/close.png" onclick="$('.cdPickHero').not('.cdTpl').remove(); Main.choosingPrivie = false; return false;"></a>
+		<h3><img src="Logiciel_files/mustknow_left.png"><span>Choix d'un Equipier</span><img src="Logiciel_files/mustknow_right.png"></h3>
+		<p>Choisissez un équipier :</p>
+		<ul>
+			<!--action is set -->
+			<form method="GET" action="/choosePeer">
+				<!-- this one is a template, do styling heres, we ll remove cdTpl and the display none-->
+				<li class="cdTpl invite">
+					<input type="radio" id="id" name="charId">
+					<img class="cdChatAvatar char">
+					<span class="cdLbl"> </span>
+				</li>
+			</form>
+		</ul>
+	</div>
+</div>
+
+	
+	<div class="cdDeathTextArea cdTpl">
+		<textarea class="frmTxt chatbox" name="message" value="" maxlength="300" onkeydown="Main.onChatInput(event,$(this));"></textarea>
+	</div>
+
+
+										</div>
+
+										<!--used for global overlay -->
+										<div class="hidden_ui" id="floating_ui_start">
+											
+											<a href="http://mush.vg/leaveTuto" class="tuto_leaver keychainify-checked" style="display:none;">
+												J'en ai assez du tuto et <em>je veux jouer maintenant</em> !
+											</a>
+											
+											<a href="http://mush.vg/goNormal" class="tuto_leaver keychainify-checked" style="display:none;">
+												Allez je suis prêt, Mode Normal pour moi !
+											</a>
+											
+											
+										</div>
+										
+										<!--used for ajax update content -->
+										
+										<div class="hidden_ui" id="mush_content">
+											
+	
+
+		
+	
+
+<table id="help">
+	<tbody><tr>
+		<td>
+			<div class="sideMenu">
+				<div class="sidemenubottom">
+					<h1>Guide du Jeu</h1>
+					<ul class="sidemenubg">
+						<li class="folder">
+							
+								
+							<h2><a href="http://mush.vg/help?cat=intro" class="keychainify-checked"> Bienvenue dans Mush</a></h2>
+							<ul>
+								<li>
+									
+									<a href="http://mush.vg/help?cat=intro&amp;scat=long_time%20ago" class="keychainify-checked">Histoire</a>
+								</li>
+							</ul>
+						</li><li class="folder">
+							
+								
+							<h2><a href="http://mush.vg/help?cat=play" class="keychainify-checked"> Jouer </a></h2>
+							<ul>
+								<li>
+									
+									<a href="http://mush.vg/help?cat=play&amp;scat=concept" class="keychainify-checked">Principes</a>
+								</li><li>
+									
+									<a href="http://mush.vg/help?cat=play&amp;scat=consoles" class="keychainify-checked">Consoles d'accès</a>
+								</li><li>
+									
+									<a href="http://mush.vg/help?cat=play&amp;scat=exploration" class="keychainify-checked"> Exploration planetaire </a>
+								</li><li>
+									
+									<a href="http://mush.vg/help?cat=play&amp;scat=skills" class="keychainify-checked"> Compétences</a>
+								</li><li>
+									
+									<a href="http://mush.vg/help?cat=play&amp;scat=status" class="keychainify-checked">Statut</a>
+								</li><li>
+									
+									<a href="http://mush.vg/help?cat=play&amp;scat=titles" class="keychainify-checked"> Titres</a>
+								</li><li>
+									
+									<a href="http://mush.vg/help?cat=play&amp;scat=characters" class="keychainify-checked"> Personnages </a>
+								</li><li>
+									
+									<a href="http://mush.vg/help?cat=play&amp;scat=be_mush" class="keychainify-checked">Être Mush</a>
+								</li>
+							</ul>
+						</li><li class="folder">
+							
+								
+							<h2><a href="http://mush.vg/help?cat=general" class="keychainify-checked">Général</a></h2>
+							<ul>
+								<li>
+									
+									<a href="http://mush.vg/help?cat=general&amp;scat=rule" class="keychainify-checked">Règlement de Mush</a>
+								</li><li>
+									
+									<a href="http://mush.vg/help?cat=general&amp;scat=FAQ" class="keychainify-checked">Questions</a>
+								</li><li>
+									
+									<a href="http://mush.vg/help?cat=general&amp;scat=software" class="active keychainify-checked">Logiciel</a>
+								</li>
+							</ul>
+						</li><li class="folder">
+							
+								
+							<h2><a href="http://mush.vg/help?cat=casting" class="keychainify-checked">Casting</a></h2>
+							<ul>
+								<li>
+									
+									<a href="http://mush.vg/help?cat=casting&amp;scat=rules" class="keychainify-checked">Principes</a>
+								</li>
+							</ul>
+						</li><li class="folder">
+							
+								
+							<h2><a href="http://mush.vg/help?cat=bonus" class="keychainify-checked">Remerciement</a></h2>
+							<ul>
+								
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</td>
+		<td>
+			<div class="helpPage">
+				<h3>Navigateur</h3>
+				<p>
+					Mush est testé pour <strong>Firefox 10</strong>, <strong>Chrome 17</strong> et <strong>Internet Explorer 9</strong>, de façon générale, un support de CSS3 et de HTML4 sont requis.
+				</p>
+				
+				<h3>Flash</h3>
+				<p> Mush nécessite la présence du lecteur Flash ( version 10.1 ou plus récente ), en cas de problème :<br>
+				<a hrf="http://get.adobe.com/flashplayer">Installer la dernière version du lecteur Flash</a>
+				</p>
+				
+				<h3>Autres</h3>
+				<p>
+					Certains pare-feu, antivirus, anti-spyware peuvent occasionnellement gêner votre navigation.<br>
+				</p>
+				
+				<p>
+					En cas de problèmes persistants, contactez le <a href="http://support.motion-twin.com/site/contact?site=92;lang=fr" class="keychainify-checked">support</a> ou demandez de l'aide sur le <a href="http://mush.vg/mush.muxxu.com/forum" class="keychainify-checked">Forum</a>.
+				</p>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<!--  -->
+			<table class="nextback">
+				<tbody><tr>
+					<td class="one">
+						<a href="http://mush.vg/help/?cat=general&amp;scat=FAQ" class="keychainify-checked"><img src="Logiciel_files/arrowleft.png"> Précedent </a>
+					</td>
+					
+				</tr>
+			</tbody></table>
+			<!---
+			::if false::
+			$$pagination()
+			::end::
+			 --->
+		</td>
+	</tr>
+</tbody></table>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="helpguide">
+				<a href="http://mush.vg/help" class="butmini keychainify-checked" style="display:inline-block;"><img src="Logiciel_files/guide.png"> Aide </a>
+				
+				
+			</div>
+		</div>
+		
+		
+	
+
+		</div>
+		
+		
+		<script type="text/javascript">__tid = {lang:'fr',chk:'e3c614eb29bb5fb3973427517c4d0248',ver:'397',infos:'oy5:tokeny32:06a1557ac3ca5456a2e92a8a172eb860y6:twinIdi9557290g'};</script><script type="text/javascript" src="Logiciel_files/boot.js"></script><div id="tid_bar_down" class="tid_safe_bar_down">
+	
+
+<div class="tid_footer">
+
+	<style type="text/css">
+		#tid_bar_down {
+			font-size		: 9pt;
+		}
+		#tid_bar_down th {
+			text-align		: left;
+		}
+	</style>
+
+	<a class="tid_bigLogo" style="display:none" href="http://twinoid.com/"><img src="Logiciel_files/logo_large.png" alt="Twinoid" title="Twinoid"></a>
+
+	<div class="tid_left">
+		
+
+		<div class="tid_block tid_desc tid_mt">
+			
+			<div class="tid_title"><a href="http://motion-twin.fr/" target="_blank"><img src="Logiciel_files/mtlogo.png" alt="Motion Twin" title="Motion Twin"></a></div>
+			<a href="http://motion-twin.fr/" target="_blank">Motion Twin</a> est un studio indépendant dans lequel on met du café pour que des jeux vidéo en sortent.
+			Notre but dans la vie&nbsp;? Faire des jeux de qualité avec des outils open source&nbsp;!
+
+			<div class="tid_social">
+				<a href="http://facebook.com/motiontwin" target="_blank"> <img src="Logiciel_files/facebook-32.png"> </a>
+				<a href="http://twitter.com/motiontwin" target="_blank"> <img src="Logiciel_files/twitter-32.png"> </a>
+				<a href="https://plus.google.com/116708514657804722871/posts" target="_blank"> <img src="Logiciel_files/gplus-32.png"> </a>
+				<a href="http://motion-twin.fr/press" target="_blank"> <img src="Logiciel_files/contact-32.png"> </a>
+			</div>
+		</div>
+
+		<div class="tid_block tid_desc tid_twinoid">
+			<div class="tid_title"><img src="Logiciel_files/logo_small.png" alt="Twinoid" title="Twinoid"></div>
+			Twinoid est le réseau asocial de Motion Twin. Il vous permet, avec un seul compte, de jouer à tous nos jeux.
+
+			<div class="tid_links">
+				<a href="http://twinoid.com/support/twinoid" target="_blank">Support</a> |
+				<a href="http://twinoid.com/support/cgu" target="_blank">Règlement</a>
+				
+				| <a href="http://twinoid.com/tid/history">Développeurs</a>
+			</div>
+			<div class="tid_server" title="Heure et nom du serveur">10:26 (sur <strong>web5</strong>)</div>
+		</div>
+
+		
+
+
+	</div>
+
+	<div class="tid_right">
+		
+			
+
+			<div class="tid_block tid_links">
+				<div class="tid_title">Autres jeux</div>
+				
+				<ul>
+					<li><a href="https://www.alphabounce.com/?utm_source=twinoid&amp;utm_campaign=passive&amp;utm_medium=internalAd&amp;utm_content=footerOtherGames">AlphaBounce</a></li><li><a href="https://monster-hotel.net/?utm_source=twinoid&amp;utm_campaign=passive&amp;utm_medium=internalAd&amp;utm_content=footerOtherGames">Monster Hotel</a></li><li><a href="http://majority.muxxu.com/?utm_source=twinoid&amp;utm_campaign=passive&amp;utm_medium=internalAd&amp;utm_content=footerOtherGames">Majority</a></li><li><a href="http://mush.vg/?utm_source=twinoid&amp;utm_campaign=passive&amp;utm_medium=internalAd&amp;utm_content=footerOtherGames">Mush</a></li><li><a href="http://odyssey.muxxu.com/?utm_source=twinoid&amp;utm_campaign=passive&amp;utm_medium=internalAd&amp;utm_content=footerOtherGames">Odyssey</a></li>
+					<li class="tid_all"><a href="http://twinoid.com/fr/jeux">Tous les jeux...</a></li>
+				</ul>
+				
+			</div>
+		
+	</div>
+
+	<div class="tid_clear"></div>
+
+	
+
+</div>
+
+
+</div>
+
+		
+	
+
+
+
+
+
+
+
+
+	<script async="" src="Logiciel_files/view"></script></body><div id="simplifyJobsContainer" style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px; overflow: visible; z-index: 2147483647;"><span></span></div></html>
